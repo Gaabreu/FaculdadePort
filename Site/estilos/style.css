@@ -1,0 +1,189 @@
+html{
+    background-color: gray;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;  
+}
+
+
+.header img{
+    width: 75px;
+    height: 75px;
+}
+
+
+.header{
+    margin-left: 20px;
+}
+.header:hover{
+    background-color: rgba(79, 79, 85, 0.904);
+}
+
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#divAside{
+
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+}
+#divAside img{
+    width: 100%; 
+    height: 100%;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+section{
+    display: inline-flex;
+    padding: 10px;
+    height: 100%;
+    margin-bottom: 10%;
+}
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    border: 2px dotted black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.espaco{
+    border: 1px solid rgba(0, 0, 0, 0.726);
+    width: 98%;
+}
+span{
+    color: red;
+}
+.gif{
+    width: 40%;
+    height: 200px;
+    transition: 2s;
+    padding: 5px;
+}
+.gif:hover{
+    width: 80%;
+    transition: 2s;
+}
+#naruto{
+    color: orange;
+    text-decoration: none;
+    transition: 2s;
+}
+#naruto:hover{
+    font-size: 20pt;
+}
+#master{
+    color: red;
+    text-decoration: none;
+    transition: 2s;
+}
+#master:hover{
+    font-size: 20pt;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    color: white;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+#git img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+/* #video{
+    margin-left: 30px;
+    width: 75px;
+    height: 75px;
+} */
+#sonic{
+    width: 40%;
+    height: 200px;
+    transition: 6s;
+}
+#sonic:hover{
+    transform: translate(-5000px);
+}
+#textoSonic{
+    border: 4px solid white;
+}
+
+@media only screen and (max-width: 450px){
+    html{
+        width: 430px;
+        height: 600px;
+    }
+    section{
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    header{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 450px;
+        z-index: 0;
+    }
+    aside{
+        width: 90%;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sobre{
+        width: 90%;
+    }
+    #cat{
+        display: none;
+    }
+    .gif{
+        width: 50%;
+        height: 100px;
+        transition: 2s;
+    }
+    .gif:hover{
+        width: 100%;
+        height: 100px;
+        transition: 2s;
+    }
+    footer{
+        display: none;
+    }
+}

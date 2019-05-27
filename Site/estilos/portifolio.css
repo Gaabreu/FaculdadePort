@@ -1,0 +1,217 @@
+html{
+    background-color: gray;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.header img{
+    width: 75px;
+    height: 75px;
+}
+
+#sectionPort{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    margin-left: 20px;
+}
+.header:hover{
+    background-color: rgba(79, 79, 85, 0.904);
+}
+
+.linha{
+    border-top:  1px solid rgba(0, 0, 0, 0.726);
+    width: 80%;
+    margin: 10px;
+}
+.textoPort{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+.exercicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* #video{
+    margin-left: 30px;
+    width: 75px;
+    height: 75px;
+} */
+
+@media only screen and (max-width:450px){
+    html{
+        width: 430px;
+        height: 600px;
+    }
+    #trabalhoManeiro img{
+        width: 80%;
+        transition: 2s;
+    }
+     #sectionPort{
+         margin-top: 100px;
+        width: 100%;
+    }
+    header{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 450px;
+        z-index: 0;
+    }
+    .textoPort{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+    }
+    
+}
+
+/*Exercicio do café java */
+
+figure{
+    width: 50%;
+    background-color: azure;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.637);
+    border-radius: 20px;
+}
+
+hr{
+    width: 90%;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+
+#cafe{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#reservar{
+    color: blueviolet;
+    margin-bottom: 0;
+}
+
+.container{
+    /* border: solid yellow 2px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coluna{
+    /* border: solid red 2px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 25pt;
+    padding: 10px;
+    display: inline-flex;
+    /* border:solid green 2px;  */
+    align-items: center;
+}
+
+.distancia{
+    font-size: 15pt;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+    /* border:solid green 2px;  */
+    padding: 10px;
+}
+
+.estrelas img{
+    width: 30%;
+    padding: 10px;
+}
+
+.estrelas{
+    font-size: 15pt;
+    display: inline-flex;
+    align-items: center;
+    /* border:solid green 2px;  */
+}
+
+.texto{
+    padding: 10px;
+    /* border:solid green 2px;  */
+}
+
+.textoSub{
+    font-size: 20pt;
+    padding: 10px;
+    /* border:solid green 2px;  */
+}
+
+.textoSub h3{
+    margin-bottom: 5px;
+}
+
+.horario{
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19pt;
+    /* border:solid green 2px;  */
+}
+.horario h3{
+    font-size: 22pt;
+}
+/*Efeitos 3d */
+
+.break { clear:both; }
+
+
+#wrapper {display: flex; align-items: center; justify-content: center;}
+
+#content .info { padding:10px; }
+
+
+#movieposters { list-style:none; margin:100px 0; height:550px; }
+#movieposters li { display:inline; float:left;
+	-webkit-perspective: 500; -webkit-transform-style: preserve-3d;
+	-webkit-transition-property: perspective; -webkit-transition-duration: 0.5s; }
+#movieposters li:hover { -webkit-perspective: 5000; }
+	
+#movieposters li img { border:10px solid #fcfafa; -webkit-transform: rotateY(30deg);
+	-moz-box-shadow:0 3px 10px #888; -webkit-box-shadow:0 3px 10px #888;
+	-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; }
+#movieposters li:hover img { -webkit-transform: rotateY(0deg); }
+
+.movieinfo { border:10px solid #fcfafa; padding:20px; width:50%; height:180px; background-color:#deddcd; margin:-195px 0 0 55px; position:absolute;
+	-moz-box-shadow:0 20px 40px #888; -webkit-box-shadow:0 20px 40px #888;
+	-webkit-transform: translateZ(30px) rotateY(30deg);
+	-webkit-transition-property: transform, box-shadow, margin; -webkit-transition-duration: 0.5s; }
+	
+#movieposters li:hover .movieinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:-175px 0 0 30px; }
+	
+.movieinfo h3 { color:#7a3f3a; font-variant: small-caps; font-family:Georgia,serif,Times; text-align:center; padding-bottom:15px; }
+.movieinfo p { padding-bottom:15px; }
+.movieinfo a { background-color:#7a3f3a; padding:5px 10px; color:#eee; text-decoration:none; display:block; width:80px; text-align:center; margin:0 auto;
+-moz-border-radius:5px; -webkit-border-radius:5px;}
+.movieinfo a:hover, .movieinfo a:focus { background-color:#6a191f; color:#fff; }
